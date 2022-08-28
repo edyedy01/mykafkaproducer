@@ -1,0 +1,9 @@
+version: '3'
+services:
+  mykafka_producer_app:
+    image: "mykafkaproducer:latest"
+    ports:
+      - 8080:8080
+      - 8000:8000
+    volumes:
+      - ~/DOCKER/MYKAFKA/mykafkaproducerdockerapp:/config/
